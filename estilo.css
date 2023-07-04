@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin:0 auto;
+    padding: 0 2%;
+}
+
+html,body{
+    height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+header{
+    height: 200px;
+    padding: 0px 0;
+}
+
+.logo{
+     width: 50%;
+}
+
+.menu{
+    padding-top: 80px;
+    width: 50%;
+    text-align: right;
+}
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+section.sobre{
+    height: calc(100% - 200px);
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    bottom: -550px;
+    right: -500px;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    background-color:black;
+}
+
+.texto-sobre{
+    margin-top: 100px;
+}
+
+.texto-sobre h1{
+    font-size: 40px;
+}
+
+.texto-sobre p{
+    margin: 30px 0;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 800px;
+}
+
+.button-principal{
+    border: 0;
+    background-color:black;
+    color: whitesmoke;
+    border-radius: 100px;
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    padding-left: 17px;
+    padding-right: 12px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.button-principal a{
+    color: white;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    .center {
+        max-width: 100%;
+    }
+
+    .logo,
+    .menu {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu a {
+        margin-right: 10px;
+    }
+}
